@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>
+    get set
+    </title>
+    <style>
+        input[type="text"]{
+            width: 600px;
+            padding: 10px;
+            
+        }
+    </style>
+    </head>
+    <body>
+    <div>welcome to jquery text</div>
+    <p></p>
+        <input class="inn" type="text" name ="name" value=""/> 
+        <button class="but1">Get value</button>
+        <input class="in" name="" value=""/>
+        <button class="but2">show</button>
+        <div class="result"></div>
+        <a target="_blank" href="https://www.google.com">click me</a>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var div = $("div").text();
+            $("div").text();
+            alert(div);
+            $("p").text(div);   
+        })
+            $(document).ready(function(){
+                var div = $("div").text();
+                $(".but1").click(function(){
+                $(".inn").val($("div").text()); 
+                
+                    
+                });
+
+                
+            })
+            $(document).ready(function(){
+                $(".but2").click(function(){
+                $("div.result").text($(".in").val())   
+                    
+                })   ; 
+            }   )
+        </script>
+    </body>
+</html>
